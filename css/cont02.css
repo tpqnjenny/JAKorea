@@ -1,0 +1,43 @@
+@charset "utf-8";
+#cont02{}
+.cont2_inner{width: 1280px;
+  height: 500px;
+  margin: 150px auto;
+  color: rgb(43, 43, 43);}
+.contTop{display: flex;
+  align-items: flex-end;}
+  .contTop h3{font-size: 43px;
+  padding: 5px 60px 0px 10px;}
+  .contTop ul{width: 500px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #7e7e7e;}
+  .contTop li:nth-child(1){color: #000;
+  font-weight: bold;}
+.contBtm{margin-top: 100px;
+  display: flex;
+  justify-content: space-between;}
+.contBtm .txt_wrap{animation: txtMov 1s 3s}
+@keyframes txtMov{
+  from{transform: translate(-50%, 0); opacity: 0}
+  to{transform: translate(0, 0); opacity: 1}
+}
+  .contBtm .txt_wrap h3{font-size: 30px;}
+  .contBtm .txt_wrap p{line-height: 23px;}
+  .contBtm .txt_wrap button{margin-top: 70px;
+    width: 150px;
+    border-radius: 30px;
+    appearance: none;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 10px 50px 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #fff url(../img/ico-arrow-right.svg) no-repeat right 10px center/20px}
+  .contBtm .img_wrap img{width: 380px;
+    transform: translate(0, -10%);
+  animation: imgMov 2s 3s}
+  @keyframes imgMov{
+    from{opacity: 0; transform: translate(0, 0)}
+    to{opacity: 1; transform: translate(0, -10%);}
+  }
